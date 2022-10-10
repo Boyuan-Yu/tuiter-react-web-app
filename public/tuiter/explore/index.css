@@ -1,8 +1,31 @@
-body{
-    background-color:black;
-    border-left:1px solid #475154;
-    border-right:1px solid #475154;
-    height:100vh;
+.wd-coldplay-text2 {
+    left: 10px;
+    bottom: 10px;
+}
+
+.wd-coldplay-text1 {
+    left: 10px;
+    bottom: 90px;
+}
+
+.wd-check-mark{
+    font-size: 10px;
+}
+.wd-spacex-text{
+    left:10px;
+    bottom:5px;
+}
+.wd-search-icon{
+    left:30px;
+    top:12px;
+}
+
+.wd-min-width-75{
+    min-width: 75px;
+}
+
+.fa-xs{
+    font-size:0.65em;
 }
 
 .wd-left-padding{
@@ -55,6 +78,9 @@ body{
 }
 .wd-bg-color-mygray{
     color:#6E767D;
+}
+.wd-bg-color-darkgray{
+    background-color:rgb(40,40,40);
 }
 
 .wd-bg-color-grew{
