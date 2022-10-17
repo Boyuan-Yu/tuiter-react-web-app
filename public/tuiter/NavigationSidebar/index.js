@@ -3,11 +3,11 @@ const NavigationSidebar = (active) => {
    <div class="list-group">
      <a class="list-group-item" href="/tuiter-react-web-app/public">
        <i class="fab fa-twitter"></i></a>
-     <a class="list-group-item ${active === 'home'? 'active':''}" href="/tuiter-react-web-app/public/tuiter/HomeScreen">
+     <a class="list-group-item ${active === 'home'? 'active':''}" href="/tuiter-react-web-app/public/tuiter/HomeScreen/index.html">
        <i class="fa fa-home"></i> 
        <span class="d-xl-inline d-none">Home</span>
      </a>
-     <a class="list-group-item ${active === 'explore'? 'active':''}" href="/tuiter-react-web-app/public/tuiter/explore">
+     <a class="list-group-item ${active === 'explore'? 'active':''}" href="/tuiter-react-web-app/public/tuiter/explore/index.html">
        <i class="fa fa-hashtag"></i> 
        <span class="d-xl-inline d-none">Explore</span>
      </a>
