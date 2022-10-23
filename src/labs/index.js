@@ -1,5 +1,5 @@
-import Assignment6 from "./a6";
-import Nav from "../nav";
+import Assignment6 from "./a6/index.js";
+import Nav from "../nav.js";
 function Labs() {
     return (
         <div>

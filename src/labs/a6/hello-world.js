@@ -1,4 +1,4 @@
-import Nav from "../../nav";
+import Nav from "../../nav.js";
 function HelloWorld() {
     return (
         <div>

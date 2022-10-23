@@ -1,6 +1,6 @@
-import Labs from "./labs";
-import HelloWorld from "./labs/a6/hello-world";
-import Tuiter from "./tuiter";
+import Labs from "./labs/index.js";
+import HelloWorld from "./labs/a6/hello-world.js";
+import Tuiter from "./tuiter/index.js";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 

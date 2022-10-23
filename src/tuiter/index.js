@@ -1,9 +1,9 @@
 import React from "react";
-import ExploreComponent from "./explore";
-import NavigationSidebar from "./navigation-sidebar";
-import WhoToFollowList from "./who-to-follow-list";
+import ExploreComponent from "./explore/index.js";
+import NavigationSidebar from "./navigation-sidebar/index.js";
+import WhoToFollowList from "./who-to-follow-list/index.js";
 import {Routes, Route} from "react-router";
-import HomeComponent from "./home";
+import HomeComponent from "./home/index.js";
 
 function Tuiter() {
     return (

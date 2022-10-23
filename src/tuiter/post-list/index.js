@@ -1,6 +1,6 @@
 import React from "react";
 import postsArray from "./posts.json"
-import PostItem from "./post-item";
+import PostItem from "./post-item.js";
 import "./index.css"
 
 

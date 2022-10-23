@@ -1,8 +1,8 @@
-import Classes from "./classes";
-import Styles from "./styles";
+import Classes from "./classes/index.js";
+import Styles from "./styles/index.js";
 import ConditionalOutput
-    from "./conditional-output";
-import TodoList from "./todo/todo-list";
+    from "./conditional-output/index.js";
+import TodoList from "./todo/todo-list.js";
 
 function Assignment6() {
     return (
