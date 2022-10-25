@@ -8,9 +8,10 @@
         "title": "Sed est leo, porta eget vestibulum eu, feugiat vel eros...",
         "content": "Nullam a leo nulla. Nam felis nibh, fermentum eu hendrerit eu, eleifend a massa. Duis ultrices velit vestibulum, eleifend sem id, ultricies lorem.",
         "image": "spongebob_all.jpg",
-        "likesNum": "34",
-        "commentNum": "26",
-        "shareNum": "11"
+        "liked": true,
+        "likesNum": 34,
+        "commentNum": 26,
+        "shareNum": 11
     },
 
     {
@@ -23,8 +24,9 @@
         "title": "Nunc volutpat ante ac mauris interdum, at aliquet arcu gravida.",
         "content": "Donec vulputate, diam consequat dapibus porta, dolor quam molestie felis, gravida interdum turpis risus vel erat. Aenean eget nu.",
         "image": "Patrick_on_stage.jpg",
-        "likesNum": "24",
-        "commentNum": "14",
-        "shareNum": "5"
+        "liked": false,
+        "likesNum": 24,
+        "commentNum": 14,
+        "shareNum": 5
     }
 ]

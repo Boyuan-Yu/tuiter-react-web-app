@@ -2,11 +2,11 @@ import React from "react";
 import PostList from "../post-list/index.js";
 
 import "./index.css";
-const ExploreComponent = () => {
+const HomeComponent = () => {
     return(
         <>
             <PostList/>
         </>
     );
 };
-export default ExploreComponent;
+export default HomeComponent;
