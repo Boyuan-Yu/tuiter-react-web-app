@@ -9,4 +9,5 @@ const Assignment7 = () => {
         </>
     );
 };
+
 export default Assignment7;

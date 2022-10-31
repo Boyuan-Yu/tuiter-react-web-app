@@ -12,8 +12,8 @@ const Todos = () => {
         dispatch(todoDoneToggle(todo))
     }
 
-    const deleteTodoClickHandler = (index) => {
-        dispatch(deleteTodo(index))
+    const deleteTodoClickHandler = (todo) => {
+        dispatch(deleteTodo(todo))
     }
 
     const createTodoClickHandler = () => {
@@ -46,7 +46,7 @@ const Todos = () => {
          todos.map(todo =>
            <li className="list-group-item">
                <button onClick={() =>
-                   deleteTodoClickHandler(todo.index)}
+                   deleteTodoClickHandler(todo._id)}
                        className="btn btn-danger
                       float-end ms-2">
                    Delete

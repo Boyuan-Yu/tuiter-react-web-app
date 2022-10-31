@@ -25,7 +25,9 @@ const todosSlice = createSlice({
             });
         },
         deleteTodo(state, action) {
-            const index = action.payload
+            const todo = state.find((todo) =>
+                todo._id === action.payload)
+            var index = state.indexOf(todo)
             state.splice(index, 1)
         },
         todoDoneToggle(state, action) {
