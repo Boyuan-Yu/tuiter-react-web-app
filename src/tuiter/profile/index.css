@@ -1,0 +1,59 @@
+.wd-profile-img-location{
+    top: 150px;
+    left: 10px;
+}
+
+.wd-profile-avatar{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.wd-border-all{
+    border: 1px solid gray;
+}
+
+.wd-left-padding{
+    padding-left:16px;
+}
+.wd-top-padding{
+    padding-top: 12px;
+}
+.wd-bot-padding{
+    padding-bottom: 12px;
+}
+.wd-right-padding{
+    padding-right:16px;
+}
+
+.wd-float-left {
+    float: left;
+}
+.wd-float-right{
+    float: right;
+}
+.wd-float-done{
+    clear:both;
+}
+
+.wd-fg-color-white{
+    color:white;
+}
+.wd-fg-color-gray{
+    color:darkgray;
+}
+.wd-fg-color-black{
+    color:black;
+}
+.wd-fg-color-red{
+    color:red
+}
+
+.wd-border-bot{
+    border-bottom: 1px solid darkgray;
+}
+
+.wd-link-no-underline{
+    text-decoration: none;
+}
+
