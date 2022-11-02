@@ -1,7 +1,7 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faLocation, faBirthdayCake, faCalendar } from "@fortawesome/free-solid-svg-icons";
-
+import {useNavigate} from 'react-router-dom';
 
 const ProfileItem = (
     {
@@ -15,9 +15,11 @@ const ProfileItem = (
         }
     }
 ) => {
+    const navigate = useNavigate();
     function gotoedit(){
-        window.location = "/tuiter/edit-profile";
+        navigate('/tuiter/edit-profile', {replace: true});
     };
+
     return(
         <>
         <div>

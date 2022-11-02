@@ -3,8 +3,9 @@ import ProfileItem from "./profile-item";
 import {useSelector} from "react-redux";
 import "./index.css";
 
+
 const ProfileComponent = () => {
-    const profile = useSelector(state => state.profile)
+    const profile = useSelector(state => state.profile);
     return(
         <>
             <h4>Profile</h4>
