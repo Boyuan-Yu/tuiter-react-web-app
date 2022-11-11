@@ -4,9 +4,9 @@ import { faRetweet } from "@fortawesome/free-solid-svg-icons";
 import { faComment} from "@fortawesome/free-solid-svg-icons";
 import { faUpload} from "@fortawesome/free-solid-svg-icons";
 import { faHeart} from "@fortawesome/free-solid-svg-icons";
-import { faCircle} from "@fortawesome/free-solid-svg-icons";
+import { faCircle, faThumbsDown} from "@fortawesome/free-solid-svg-icons";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer"
+import {deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
 
 
@@ -31,7 +31,7 @@ const PostItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return(
@@ -69,9 +69,19 @@ const PostItem = (
                             <li><a href="#" className=" wd-link-no-underline">
                                 <FontAwesomeIcon icon={faRetweet} />
                                 <span className="wd-left-padding">{post.retuits}</span></a></li>
-                            <li><a href="#" className= {post.liked === true ? "wd-fg-color-red wd-link-no-underline":"wd-link-no-underline" }>
+                            <li><a onClick={() => dispatch(updateTuitThunk({
+                                ...post,
+                                likes: post.likes + 1
+                            }))} href="#" className= {post.liked === true ? "wd-fg-color-red wd-link-no-underline":"wd-link-no-underline" }>
                                 <FontAwesomeIcon icon={faHeart} />
                                 <span className="wd-left-padding">{post.likes}</span></a></li>
+                            <li><a onClick={() => dispatch(updateTuitThunk({
+                                ...post,
+                                dislikes: post.dislikes + 1,
+                                disliked:true
+                            }))} href="#" className= {post.disliked === true ? "wd-fg-color-red wd-link-no-underline":"wd-link-no-underline" }>
+                                <FontAwesomeIcon icon={faThumbsDown} />
+                                <span className="wd-left-padding">{post.dislikes}</span></a></li>
                             <li><a href="#" className=" wd-link-no-underline">
                                 <FontAwesomeIcon icon={faUpload} />
                             </a></li>
