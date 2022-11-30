@@ -21,17 +21,18 @@ const templateTuit = {
     "likes": 0,
 }
 
+
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
         const newTuit = {
             ...templateTuit,
-            // _id: (new Date()).getTime(),
             tuit: whatsHappening
         }
         dispatch(createTuitThunk(newTuit));
-        window.location.reload();
+
+        // window.location.reload();
 
     }
     return (
