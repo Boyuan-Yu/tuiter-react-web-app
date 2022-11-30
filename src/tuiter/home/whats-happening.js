@@ -27,10 +27,11 @@ const WhatsHappening = () => {
     const tuitClickHandler = () => {
         const newTuit = {
             ...templateTuit,
-            _id: (new Date()).getTime(),
+            // _id: (new Date()).getTime(),
             tuit: whatsHappening
         }
         dispatch(createTuitThunk(newTuit));
+        window.location.reload();
 
     }
     return (
