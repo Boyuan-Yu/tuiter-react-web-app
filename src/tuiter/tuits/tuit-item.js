@@ -71,10 +71,12 @@ const PostItem = (
                                 <span className="wd-left-padding">{post.retuits}</span></a></li>
                             <li><a onClick={() => dispatch(updateTuitThunk({
                                 ...post,
-                                likes: post.likes + 1
+                                likes: post.likes + 1,
+                                liked: true
                             }))} href="#" className= {post.liked === true ? "wd-fg-color-red wd-link-no-underline":"wd-link-no-underline" }>
                                 <FontAwesomeIcon icon={faHeart} />
                                 <span className="wd-left-padding">{post.likes}</span></a></li>
+
                             <li><a onClick={() => dispatch(updateTuitThunk({
                                 ...post,
                                 dislikes: post.dislikes + 1,
