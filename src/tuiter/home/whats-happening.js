@@ -32,7 +32,7 @@ const WhatsHappening = () => {
         }
         dispatch(createTuitThunk(newTuit));
 
-        // window.location.reload();
+        window.location.reload();
 
     }
     return (
